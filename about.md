@@ -24,4 +24,4 @@ Pay as you go, minimal risks, maximal production!
 
 Don't waste you're time, contact me right now by
 
-[email@domain.com](mailto:email@domain.com)
+<iframe src="https://docs.google.com/forms/d/1zKhC73tE3SxRPVFyX14ewCjjxLj1bYXjcWA0XRZLEyU/viewform?embedded=true#start=embed" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
