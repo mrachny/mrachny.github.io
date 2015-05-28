@@ -64,6 +64,9 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+					<li>
+                        <a class="page-scroll" href="#blog">Contact</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -89,7 +92,7 @@
                     <h2 class="section-heading">We've got what you need!</h2>
                     <hr class="light">
                     <p class="text-faded">If you don't understand a lot in new web technologies, but can't find somebody to trust we should meet! Stop waste your time contact me as soon as possible and you will be surprised how efficient I can find solution suites exactly your needs!</p>
-                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                    <a href="#contact" class="btn btn-default btn-xl">Get Started!</a>
                 </div>
             </div>
         </div>
@@ -323,7 +326,33 @@
             </div>
         </div>
     </section>
-
+	<section id="blog">
+		---
+		layout: default
+		---
+		
+		<div class="posts">
+		  {% for post in site.posts %}
+		<div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Up to Date</h3>
+                        <p class="text-muted">Only new updated frameworks, but never beta no-name parts. The newest go-for-sure!</p>
+                    </div>
+                </div>
+		    <article class="post">    
+		      
+		      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+		
+		      <div class="entry">
+		        {{ post.content | truncatewords:40}}
+		      </div>
+		      
+		      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+		    </article>
+		  {% endfor %}
+		</div> 
+    </section>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
