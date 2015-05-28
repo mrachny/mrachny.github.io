@@ -327,29 +327,19 @@
         </div>
     </section>
 	<section id="blog">
-		---
-		layout: default
-		---
-		
 		<div class="posts">
 		  {% for post in site.posts %}
-		<div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">Only new updated frameworks, but never beta no-name parts. The newest go-for-sure!</p>
-                    </div>
-                </div>
-		    <article class="post">    
-		      
-		      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-		
-		      <div class="entry">
-		        {{ post.content | truncatewords:40}}
-		      </div>
-		      
-		      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-		    </article>
+			<div class="col-lg-3 col-md-6 text-center">	
+				<article>
+				  <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+			
+				  <div class="entry">
+					{{ post.content | truncatewords:40}}
+				  </div>
+				  
+				  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+				</article>
+			</div>
 		  {% endfor %}
 		</div> 
     </section>
