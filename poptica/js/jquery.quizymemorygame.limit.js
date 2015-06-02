@@ -390,8 +390,7 @@ if(!Array.indexOf){
 			//$('#quizy-game-summary').append('<div><span class="st_sharethis_large" displayText="ShareThis"></span></div>');
           $('#quizy-game-summary').append('<div id="gs-popticabut"><a href="http://www.poptica.co.il">Peter optica</a></div>');
 	
-					$('#quizy-game-summary').append('<!-- Go to www.addthis.com/dashboard to customize your tools --><div class="addthis_sharing_toolbox"></div>');
-          }
+					}
           
           // Appends the close button
 		  		
