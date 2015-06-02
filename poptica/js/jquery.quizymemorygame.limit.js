@@ -119,7 +119,7 @@ if(!Array.indexOf){
 
           var yMid = e.pageY -//$(this).height()/2 - 
                       $('div.quizy-mg-notification-fly').height()/2 -
-                      opts.itemsMargin/2;
+                      opts.itemsMargin/2 -287;
           $('div.quizy-mg-notification-fly').css({top:yMid+'px',left:xMid+'px'});
           // starts the timer
           if(numTotalClicks==0) gameTimer = setInterval(incTime,1000);
@@ -390,7 +390,7 @@ if(!Array.indexOf){
 			//$('#quizy-game-summary').append('<div><span class="st_sharethis_large" displayText="ShareThis"></span></div>');
           $('#quizy-game-summary').append('<div id="gs-popticabut"><a href="http://www.poptica.co.il">Peter optica</a></div>');
 	
-											
+					$('#quizy-game-summary').append('<!-- Go to www.addthis.com/dashboard to customize your tools --><div class="addthis_sharing_toolbox"></div>');
           }
           
           // Appends the close button
